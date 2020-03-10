@@ -234,12 +234,12 @@ public class Event {
 				playerA.‚¨‹à‚Ì‘Œ¸(20000);
 			}
 			if (turn==1) {
-				//playerB.‚¨‹à‚Ì‘Œ¸(20000);
-				playerB.B=0;
+				playerB.‚¨‹à‚Ì‘Œ¸(20000);
+				//playerB.B=0;
 			}
 			if (turn==2) {
-				//playerC.‚¨‹à‚Ì‘Œ¸(20000);
-				playerC.C=0;
+				playerC.‚¨‹à‚Ì‘Œ¸(20000);
+				//playerC.C=0;
 			}
 			if (turn==3) {
 				//playerD.D=0;
