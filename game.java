@@ -107,9 +107,9 @@ public class game extends Applet implements Runnable{
 		}
 		if (gameMode==3) {
 			gameMode++;
-			//if (num<210) con.OSG.drawImage(ルールA,0,0,getSize().width,getSize().height,this);
-			//if (num>600) con.OSG.drawImage(ルールB,200,0,getSize().width-300,750,this);
-			//ロード画面(g);
+			if (num<210) con.OSG.drawImage(ルールA,0,0,getSize().width,getSize().height,this);
+			if (num>600) con.OSG.drawImage(ルールB,200,0,getSize().width-300,750,this);
+			ロード画面(g);
 		}else if (gameMode==4) 黒紙(g);
 		else if (gameMode==5) {
 			con.OSG.clearRect(0,0,getSize().width,getSize().height); //オフスクリーンの初期化
@@ -685,8 +685,8 @@ public class game extends Applet implements Runnable{
 		Random r=new Random();
 		deme1=r.nextInt(6)+1;
 		deme2=r.nextInt(6)+1;//サイコロの出目を乱数で出す	範囲:2～12
-		//con.deme = deme1 + deme2;
-		con.deme=9;
+		con.deme = deme1 + deme2;
+		//con.deme=9;
 		t=con.ターン;
 		if(con.turn==0) {
 			con.masu=playerA.A;
